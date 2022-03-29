@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -18,7 +19,7 @@ import java.util.Properties;
  * https://github.com/docker-java/docker-java/blob/master/docs/getting_started.md
  * https://www.baeldung.com/docker-java-api
  */
-@Component
+@Service
 public class DockerService {
     public Logger logger = LoggerFactory.getLogger(DockerService.class);
     private final DockerClient dockerClient;
